@@ -1,3 +1,9 @@
-<%= link_to "answer", answer_path %>
-<h1>Questions#ask</h1>
-<p><%= @question %></p>
+<h2>Ask a question</h2>
+<form action="answer">
+  <input type="text" name="question">
+  <br />
+  <input class="btn" type="submit" value="Ask!">
+</form>
+
+<!-- action specifies the URL that will be used when submitting the form -->
+<!-- Replace the ??? so that your form send a request to QuestionsController#answer with a good parameter name. -->
